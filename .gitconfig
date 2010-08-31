@@ -1,0 +1,15 @@
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+    last = log --oneline -1 HEAD
+    info = remote -v
+[push]
+	default = current
+[github]
+	user = chatgris

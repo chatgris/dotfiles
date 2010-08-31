@@ -1,0 +1,3 @@
+== SCIM dependency ==
+
+aptitude install scim uim-anthy scim-uim ttf-vlgothic
