@@ -1,0 +1,22 @@
+alias ls='ls --classify --tabsize=0 --literal --color=auto --show-control-chars --human-readable'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lsg='ls | grep $1'
+
+alias ..='cd ..'
+
+alias cp='cp --interactive'
+alias mv='mv --interactive'
+alias rm='rm --interactive'
+
+alias grep="grep --color=auto"
+alias egrep="egrep --color=auto"
+alias rgrep="rgrep --color=auto"
+
+alias df='df --human-readable'
+alias du='du --human-readable'
+
+
+# colordiff
+alias diff='colordiff'

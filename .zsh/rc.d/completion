@@ -1,0 +1,53 @@
+autoload -U incremental-complete-word   # complétion incrémentale
+autoload -U compinit
+compinit
+
+zstyle ':completion:*' completer _complete _list _oldlist _expand _ignored _match _correct _approximate _prefix
+
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*'
+
+zstyle ':completion:*' max-errors 1
+
+zstyle ':completion:*' insert-unambiguous true
+
+zstyle ':completion:*' squeeze-slashes true
+
+zstyle ':completion:*' original true
+
+zstyle ':completion::complete:*' use-cache 1
+zstyle ':completion::complete:*' cache-path ~/.compcache/$HOST
+
+zstyle ':completion:*:complete:-command-::commands' ignored-patterns '*\~' '.bak'
+
+zstyle ':completion:*:cd:*' ignored-patterns '(*/)#lost+found'
+
+zstyle ':completion:*:(rm|kill|diff):*' ignore-line yes
+
+zstyle ':completion:*:(cd|mv|cp):*' ignore-parents parent pwd
+
+zstyle ':completion:*:*:*:*:processes' menu yes select
+zstyle ':completion:*:*:*:*:processes' force-list always
+
+zstyle ':completion:*:processes' command 'ps -au$USER'
+
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+
+compdef _gnu_generic make df du gpg
+
+zstyle ':completion:*:tar:*' files '*.tar|*.tgz|*.tz|*.tar.Z|*.tar.bz2|*.tZ|*.tar.gz'
+zstyle ':completion:*:javac:*' files '*.java'
+
+zstyle ':completion:*:*:mpg123:*' file-patterns \
+    '*.(mp3|MP3):mp3\ files *(-/):directories'
+
+zstyle ':completion:*:*:ogg123:*' file-patterns \
+    '*.(ogg|OGG):ogg\ files *(-/):directories'
+
+zstyle ':completion:*' verbose yes #no
+zstyle ':completion:*:descriptions' format '%B%d%b'
+zstyle ':completion:*:messages' format '%d'
+zstyle ':completion:*:warnings' format 'No matches for: %d'
+zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+

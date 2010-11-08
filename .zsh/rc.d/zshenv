@@ -1,0 +1,77 @@
+#### Le PATH
+path=(
+	/bin
+	/sbin
+	/usr/bin
+	/usr/sbin
+	/usr/bin/X11
+	/usr/X11R6/bin
+	/usr/local/bin
+	/usr/local/sbin
+	/usr/games
+	$HOME/bin
+	.
+)
+
+#### Viewer/Editeur par defaut (pour Crontab, CVS,...)
+export VISUAL=vim
+export EDITOR=vim
+
+#### Permissions rw-r--r-- pour les fichiers crées
+#### et rwxr-xr-x pour les répertoires crées
+umask 022
+
+#### Les couleurs
+if [[ -x `which dircolors` ]]; then
+	if [[ -f ~/.dir_colors ]]; then
+		eval $(dircolors -b ~/.dir_colors)
+	elif  [[ -f /etc/dir_colors ]]; then
+		eval $(dircolors -b /etc/dir_colors)
+	else
+		eval $(dircolors -b)
+	fi
+else
+	LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:';
+	export LS_COLORS
+fi
+export ZLS_COLORS=$LS_COLORS
+
+
+#### Historique
+export HISTORY=1000
+export SAVEHIST=1000
+
+export HISTFILE=$HOME/.zhistory
+
+## directory stack
+DIRSTACKSIZE=10
+
+#### Watch
+LOGCHECK=60
+WATCHFMT="%n has %a %l from %M at %t"
+WATCH=notme
+
+#### Console linux, dans un screen ou un rxvt
+if [ "$TERM" = "linux" -o "$TERM" = "screen" -o "$TERM" = "rxvt" ]
+then
+  # Correspondance touches-fonction spécifique
+  bindkey '[1~' beginning-of-line       # Home
+  bindkey '[4~' end-of-line             # End
+fi
+
+#### xterm
+if [ "$TERM" = "xterm" ]
+then
+  # Correspondance touches-fonction spécifique
+  bindkey '[H'  beginning-of-line       # Home
+  bindkey '[F'  end-of-line             # End
+fi
+
+#### gnome-terminal
+if [ "$COLORTERM" = "gnome-terminal" ]
+then
+  # Correspondance touches-fonction spécifique
+  bindkey '^[OH'  beginning-of-line       # Home
+  bindkey '^[OF'  end-of-line             # End
+fi
+

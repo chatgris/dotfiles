@@ -1,0 +1,90 @@
+#### Changement de répertoire
+setopt auto_cd              # cd auto (ba ouais, surprenant, non ?)
+setopt auto_pushd           # pushd auto (j'aime les commentaires)
+setopt chase_links          # liens symboliques
+setopt pushd_ignore_dups    # ignore les doublons dans la pile
+setopt pushd_silent         # chut !
+setopt pushd_to_home        # pushd, go home!
+
+#### Complétion
+
+# Schéma par défaut :
+# tab*1 : complète jusqu'au bout de la partie commune
+# tab*2 : propose une liste de choix
+# tab*3 : complète avec le 1er item de la liste
+# tab*4 : complète avec le 2ème item de la liste, etc...
+
+#setopt menu_complete
+# tab1 : propose une liste de choix et complète 1er item de la liste
+# tab2 : complète avec le 2ème item de la liste, etc...
+
+unsetopt list_ambiguous
+# tab1 : complète partie commune et propose une liste de choix
+# tab2 : complète avec le 1er item de la liste
+# tab3 : complète avec le 2ème item de la liste, etc...
+
+setopt auto_param_keys      # modifie un espace en un caractére autre
+setopt auto_param_slash     # transforme un espace en slash si c'est un répertoire
+setopt auto_remove_slash    # enléve le slash à la fin si espace
+
+setopt complete_aliases     # compléte les alias
+setopt alwaystoend          # toujours le curseur a la fin
+setopt completeinword       # pas seulement à la fin
+setopt nolisttypes          # les types
+
+#### Expansion et globbing
+setopt bad_pattern          # message d'erreur si pattern mal formé
+setopt extended_glob        # Permet les ~ # et ^
+setopt glob_dots            # complétion sur fichiers et rep cachés
+#setopt no_match             # message d'erreur quand rien ne correspond
+
+## disable globbing on some commands
+for com in alias expr find which zmv grep; do
+  alias $com="noglob $com"
+done
+
+## disable auto correction on some commands
+for com in cp mkdir mv rm; do
+  alias $com="nocorrect $com"
+done
+
+#### Historique
+# Gestion interne de l'historique
+setopt inc_append_history   # a+
+setopt NO_share_history     # partage dynamique de l'historique
+setopt NO_extended_history     # modifie l'affichage rendu par history
+
+setopt hist_ignore_all_dups # Evite les doublons
+setopt hist_ignore_space
+setopt hist_expire_dups_first
+setopt hist_find_no_dups    # ne rappelle pas les doublons
+setopt hist_verify          # ! écrit la commande dans le prompt au lieu de l'éxécuter
+
+setopt hist_allow_clobber
+setopt hist_reduce_blanks
+
+#### Input/Output
+
+setopt mail_warning         # avertissement quand j'ai un mail
+setopt print_exit_value     # si $exit!=0, echo $exit
+unsetopt rm_star_silent     # confirmation pour rm *
+setopt short_loops          # autorise la  forme courte pour for, repeat, select, if, et function
+setopt interactive_comments # autorise les commentaires dans le shell interactif
+
+#### Job Control
+
+unsetopt ignore_eof         # Ctrl-D = logout
+unsetopt bg_nice            # 0 politesse au fond, c'est mieux!
+setopt no_hup               # nohup permanent
+setopt no_check_jobs
+setopt long_list_jobs
+
+#### Scripts and Functions
+
+# Sortie des caractéres hexadécimaux dans le format C standard
+setopt C_BASES
+
+#### ZLE
+bindkey -e
+setopt no_beep              # beep en cas d'erreur
+
