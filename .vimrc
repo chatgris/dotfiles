@@ -49,6 +49,7 @@ if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 10
     set columns=130
     set lines=55
+    set guioptions=acei
 endif
 
 set autoindent
