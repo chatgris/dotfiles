@@ -17,6 +17,7 @@ alias rgrep="rgrep --color=auto"
 alias df='df --human-readable'
 alias du='du --human-readable'
 
+alias tf=' tail -f'
 
 # colordiff
 alias diff='colordiff'
