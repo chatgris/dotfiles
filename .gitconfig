@@ -9,6 +9,8 @@
     co = checkout
     ch = cherry-pick
     br = branch
+    bra = branch -a
+    l = log
     last = log --oneline -1 HEAD
     info = remote -v
 [push]
