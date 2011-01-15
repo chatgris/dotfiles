@@ -1,0 +1,10 @@
+# ~.autotest
+require 'autotest/inotify'
+require 'autotest_notification'
+SPEAKING = false
+DOOM_EDITION = false
+BUUF = true
+PENDING = false
+STICKY = false
+SUCCESS_SOUND = ''
+FAILURE_SOUND = ''
