@@ -10,6 +10,7 @@
     ch = cherry-pick
     br = branch
     bra = branch -a
+    fe = fetch -p
     l = log
     last = log --oneline -1 HEAD
     info = remote -v
