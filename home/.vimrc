@@ -62,8 +62,8 @@ set softtabstop=4
 set shiftwidth=4
 set shiftround
 
-" Supprime automatiquement les espaces de fin de ligne
-autocmd BufWritePre * :%s/\s\+$//e
+" Supprime les espaces de fin de ligne
+nmap <leader>s :%s/\s\+$//e<cr>
 
 " La complétion intelligente
 autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
