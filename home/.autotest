@@ -1,5 +1,4 @@
 # ~.autotest
-require 'autotest/inotify'
 require 'autotest_notification'
 SPEAKING = false
 DOOM_EDITION = false
