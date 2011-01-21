@@ -1,24 +1,27 @@
 [color]
-    status = auto
-    diff = auto
     branch = auto
+    diff = auto
     interactive = auto
+    status = auto
 [alias]
-    st = status
-    sm = submodule update
-    ci = commit
-    co = checkout
-    ch = cherry-pick
     br = branch
     bra = branch -a
+    ch = cherry-pick
+    ci = commit
+    co = checkout
+    df = diff
     fe = fetch -p
+    i = remote -v
     l = log
-    last = log --oneline -1 HEAD
-    info = remote -v
+    la = log -p -1 HEAD
+    lo = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    sm = submodule update
+    st = status
 [push]
     default = current
 [github]
     user = chatgris
 [user]
-    name = chatgris
     email = julien.boyer@af83.com
+    name = chatgris

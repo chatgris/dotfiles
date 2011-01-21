@@ -21,3 +21,5 @@ alias tf=' tail -f'
 
 # colordiff
 alias diff='colordiff'
+
+alias g="git"
