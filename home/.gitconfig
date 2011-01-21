@@ -19,3 +19,6 @@
     default = current
 [github]
     user = chatgris
+[user]
+    name = chatgris
+    email = julien.boyer@af83.com
