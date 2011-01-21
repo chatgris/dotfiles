@@ -5,6 +5,7 @@
     interactive = auto
 [alias]
     st = status
+    sm = submodule update
     ci = commit
     co = checkout
     ch = cherry-pick
