@@ -15,7 +15,7 @@ let mapleader = "!"
 let g:mapleader = "!"
 
 " Recharger et éditer le .vimrc
-nmap <leader>s :source ~/.vimrc<cr>
+nmap <leader>r :source ~/.vimrc<cr>
 nmap <leader>e :e! ~/.vimrc<cr>
 
 

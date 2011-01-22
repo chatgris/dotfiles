@@ -25,7 +25,7 @@ if &t_Co != 256 && ! has("gui_running")
   finish
 endif
 
-set background=dark
+"set background=dark
 hi clear
 if exists("syntax_on")
   syntax reset
@@ -37,7 +37,7 @@ let g:colors_name = "xoria256"
 
 
 
-hi Normal   cterm=none  ctermfg=252 ctermbg=234 gui=none    guifg=#d0d0d0   guibg=#202020
+"hi Normal   cterm=none  ctermfg=252 ctermbg=234 gui=none    guifg=#d0d0d0   guibg=#202020
 
 hi Cursor   cterm=none  ctermfg=bg  ctermbg=214 gui=none    guifg=bg    guibg=#ffaf00
 hi CursorColumn cterm=none          ctermbg=238 gui=none            guibg=#444444
