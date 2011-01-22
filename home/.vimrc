@@ -107,8 +107,8 @@ set autowrite       " sauvegarde auto quand on quitte ou qu'on change de buffer
 " cf :help backup
 set nobackup
 set writebackup
-set backupdir=$HOME/.vim/backup
-set directory=$HOME/.vim/swap
+set backupdir=$HOME/.backup
+set directory=$HOME/.swap
 
 " Le répertoire courant est celui du fichier du buffer courant
 "autocmd BufEnter * :lcd %:p:h
