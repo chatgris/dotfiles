@@ -17,7 +17,7 @@ chatnets = {
 };
 
 channels = (
-  { name = "#af83"; chatnet = "freenode"; autojoin = "No"; },
+  { name = "#af83"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#mongoid"; chatnet = "freenode"; autojoin = "Yes"; },
   { name = "#sammy"; chatnet = "freenode"; autojoin = "Yes"; }
   { name = "#heroku"; chatnet = "freenode"; autojoin = "Yes"; }
