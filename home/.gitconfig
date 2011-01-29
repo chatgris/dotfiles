@@ -4,24 +4,33 @@
     interactive = auto
     status = auto
 [alias]
-    br = branch
-    bra = branch -a
+    a = add
+    b = branch
+    ba = branch -a
+    bc = branch --contains
+    bm = branch --merged
+    bn = branch --no-merged
     ch = cherry-pick
     ci = commit
     co = checkout
-    df = diff
+    ds = describe
+    df = diff --word-diff
     fe = fetch -p
     i = remote -v
     l = log
     la = log -p -1 HEAD
     lo = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    pl = pull
+    ph = push
     sm = submodule update
-    st = status
+    st = status -sb
 [push]
     default = current
 [github]
     user = chatgris
+[rerere]
+    enabled = 1
 [user]
     email = julien.boyer@af83.com
     name = chatgris
