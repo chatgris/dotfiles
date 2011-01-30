@@ -10,6 +10,7 @@ path=(
 	/usr/local/sbin
 	/usr/games
 	$HOME/bin
+	$HOME/opt/bin
 	.
 )
 
