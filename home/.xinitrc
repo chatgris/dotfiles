@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-#open your theme, otherwise it's ugly
-gnome-settings-daemon &
 #open power manager
 gnome-power-manager &
 #open net work manager
