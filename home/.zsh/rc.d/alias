@@ -23,3 +23,5 @@ alias tf=' tail -f'
 alias diff='colordiff'
 
 alias g="git"
+
+alias ff="src/firefox/firefox -profilemanager -no-remote"
