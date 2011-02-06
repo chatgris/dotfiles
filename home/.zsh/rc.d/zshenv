@@ -40,6 +40,7 @@ export ZLS_COLORS=$LS_COLORS
 
 #### Historique
 export HISTORY=1000
+export HISTSIZE=1000
 export SAVEHIST=1000
 
 export HISTFILE=$HOME/.zhistory
