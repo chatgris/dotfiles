@@ -14,5 +14,5 @@ export XIM_PROGRAM="scim -d"
 scim -d &
 gtk-redshift -l 48.5:02.20 -t 5700:3600 -g 0.8 -m vidmode -v &
 #~/bin/awesome-clock.sh &
-set b off
+xset b off
 exec awesome
