@@ -16,6 +16,7 @@
     ds = describe
     df = diff --word-diff
     fe = fetch -p
+    ft = fetch -t
     i = remote -v
     l = log
     la = log -p -1 HEAD
