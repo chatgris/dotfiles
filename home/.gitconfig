@@ -15,7 +15,7 @@
     co = checkout
     ds = describe
     df = diff --word-diff
-    fe = fetch -p
+    fe = fetch -p -a
     ft = fetch -t
     i = remote -v
     l = log
