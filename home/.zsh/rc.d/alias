@@ -13,6 +13,7 @@ alias rm='rm --interactive'
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias rgrep="rgrep --color=auto"
+alias ack-grep="ack"
 
 alias df='df --human-readable'
 alias du='du --human-readable'
