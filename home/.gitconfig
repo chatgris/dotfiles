@@ -4,28 +4,29 @@
     interactive = auto
     status = auto
 [alias]
-    a = add
-    b = branch
-    ba = branch -a
-    bc = branch --contains
-    bm = branch --merged
-    bn = branch --no-merged
-    ch = cherry-pick
-    ci = commit
-    co = checkout
-    ds = describe
-    df = diff --word-diff
-    fe = fetch -p -a
-    ft = fetch -t
-    i = remote -v
-    l = log
-    la = log -p -1 HEAD
-    lo = log -p
+    a   = add
+    b   = branch
+    ba  = branch -a
+    bc  = branch --contains
+    bm  = branch --merged
+    bn  = branch --no-merged
+    ch  = cherry-pick
+    ci  = commit
+    co  = checkout
+    ds  = describe
+    df  = diff --word-diff
+    fe  = fetch -p -a
+    ft  = fetch -t
+    i   = remote -v
+    l   = log
+    la  = log -p -1 HEAD
+    lo  = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    pl = pull
-    ph = push
-    sm = submodule update
-    st = status -sb
+    pl  = pull
+    ph  = push
+    sh  = show
+    sm  = submodule update
+    st  = status -sb
 [push]
     default = current
 [github]
@@ -33,5 +34,5 @@
 [rerere]
     enabled = 1
 [user]
-    email = julien.boyer@af83.com
+    email = jboyer@af83.com
     name = chatgris
