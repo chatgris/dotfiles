@@ -25,4 +25,7 @@ alias diff='colordiff'
 
 alias g="git"
 
-alias ff="src/firefox/firefox -profilemanager -no-remote"
+alias ff="~/src/firefox/firefox -profilemanager -no-remote"
+
+# frak
+alias gl="git checkout Gemfile.lock"
