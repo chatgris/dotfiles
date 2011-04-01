@@ -65,6 +65,9 @@ set shiftround
 " Supprime les espaces de fin de ligne
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Add default utf-8 encoding to ruby files
+autocmd BufNewFile *.rb,*.rake 0r ~/.vim/skeletons/skeleton.rb
+
 " La complétion intelligente
 autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
