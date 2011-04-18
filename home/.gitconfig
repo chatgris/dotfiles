@@ -22,7 +22,7 @@
     la  = log -p -1 HEAD
     lo  = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    pl  = pull
+    pl  = pull --rebase
     ph  = push
     sh  = show
     sm  = submodule update
