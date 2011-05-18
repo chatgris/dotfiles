@@ -21,7 +21,7 @@
     l   = log
     la  = log -p -1 HEAD
     lo  = log -p
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit --no-merges
     pl  = pull --rebase
     ph  = push
     sh  = show
