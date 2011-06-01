@@ -1,25 +1,26 @@
+call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
 set nocompatible
+set nocp
 set history=400
 set sh=/bin/zsh
 set encoding=utf-8
 set fileencoding=utf-8
 set viminfo='20,\"500,h
 
-" Pour que le backspace fonctionne convenablement
-set backspace=indent,eol,start
-set mouse=a
-set mousehide
-
-" mapleader
-let mapleader = "!"
-let g:mapleader = "!"
-
-" Recharger et éditer le .vimrc
-nmap <leader>r :source ~/.vimrc<cr>
-nmap <leader>e :e! ~/.vimrc<cr>
-
-
-"" Interface
+" les yeux
+syntax on
+set t_Co=256
+set background=dark
+colorscheme xoria256
+if !has("gui_running")
+  set mouse=a
+  set guifont=Dejavu\ Sans\ Mono\ 10
+  set columns=130
+  set lines=55
+  set guioptions=acei
+endif
 set nu
 set numberwidth=1
 set ruler
@@ -35,88 +36,72 @@ set noerrorbells
 set visualbell t_vb=
 autocmd GUIEnter * set vb t_vb=
 
-set laststatus=2
-
-syntax on
-syntax sync fromstart
-autocmd BufEnter * :syntax sync fromstart
-
-set t_Co=256
-set background=dark
-colorscheme xoria256
-
-if has("gui_running")
-    set guifont=Dejavu\ Sans\ Mono\ 10
-    set columns=130
-    set lines=55
-    set guioptions=acei
-endif
-
+" indent and tabs
 set autoindent
 set smartindent
-
 set smarttab
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
+" use tab for auto-expansion in menus
+set wc=<TAB>
+
+" show a list of all matches when tabbing a command
+set wmnu
 
 " Supprime les espaces de fin de ligne
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Add default utf-8 encoding to ruby files
-autocmd BufNewFile *.rb,*.rake 0r ~/.vim/skeletons/skeleton.rb
-
-" La complétion intelligente
-autocmd FileType html setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType c setlocal omnifunc=ccomplete#Complete
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType c,cpp,java,javascript,python,xml,xhtml,html set shiftwidth=2
-
-
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
-
-"" Search
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-
-"" Buffers
-set hidden
-set wmh=0
-set splitright
-
-" Buffer précédent/suivant
-noremap <C-tab> :bp!<cr>
-noremap <tab> :bn!<cr>
-
-
-" Fichiers / Backups
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set acd             " Va au répertoire du fichier en cours d'édition
-set autoread        " recharge auto quand un fichier est modifié
-set autowrite       " sauvegarde auto quand on quitte ou qu'on change de buffer
-
-" cf :help backup
+" backup
+set autoread
+set autowrite
 set nobackup
 set writebackup
 set backupdir=$HOME/.backup
 set directory=$HOME/.swap
 
-" Le répertoire courant est celui du fichier du buffer courant
-"autocmd BufEnter * :lcd %:p:h
-set autochdir
+" default encoding
+set encoding=utf-8
+set fileencoding=utf-8
 
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
+" detect the type of file
+filetype on
+
+" load filetype plugins
+filetype plugin on
+
+" load indent files for specific filetypes
+filetype indent on
+
+" Perf
+set timeout timeoutlen=3000 ttimeoutlen=100
+set lazyredraw
+set nofsync
+" affiche les numéros de ligne sur le coté
+set nu!
+set showmatch
+" tabs
+set tabstop=8
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set shiftround
+" circular
+set wrapscan
+set hls
+set incsearch
+set wmnu
+
+" Buffers
+set hidden
+set wmh=0
+set splitright
+noremap <C-tab> :bp!<cr>
+noremap <tab> :bn!<cr>
+
+" supertab
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabCrMapping = 0
