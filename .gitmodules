@@ -55,3 +55,6 @@
 [submodule "home/.vim/bundle/unimpaired"]
 	path = home/.vim/bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "home/.vim/bundle/textobj-user"]
+	path = home/.vim/bundle/textobj-user
+	url = git://github.com/vim-scripts/textobj-user.git
