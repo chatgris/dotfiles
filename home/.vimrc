@@ -100,6 +100,8 @@ set wmh=0
 set splitright
 noremap <C-tab> :bp!<cr>
 noremap <tab> :bn!<cr>
+noremap : ,
+noremap , :
 
 " supertab
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"

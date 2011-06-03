@@ -58,3 +58,6 @@
 [submodule "home/.vim/bundle/textobj-user"]
 	path = home/.vim/bundle/textobj-user
 	url = git://github.com/vim-scripts/textobj-user.git
+[submodule "home/.vim/bundle/endwise"]
+	path = home/.vim/bundle/endwise
+	url = git://github.com/tpope/vim-endwise.git
