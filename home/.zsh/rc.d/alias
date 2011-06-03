@@ -29,3 +29,7 @@ alias ff="~/src/firefox/firefox -profilemanager -no-remote"
 
 # frak
 alias gl="git checkout Gemfile.lock"
+
+# xkb
+alias aze="setxkbmap fr bepo"
+alias bép="setxkbmap fr"
