@@ -17,12 +17,10 @@ colorscheme xoria256
 if !has("gui_running")
   set mouse=a
   set guifont=Dejavu\ Sans\ Mono\ 10
-  set columns=130
-  set lines=55
   set guioptions=acei
 endif
-set nu
 set numberwidth=1
+set nu!
 set ruler
 set shm=tToOIA      " Formatage des messages
 set showmode        " affiche le mode actuel
@@ -79,8 +77,6 @@ filetype indent on
 set timeout timeoutlen=3000 ttimeoutlen=100
 set lazyredraw
 set nofsync
-" affiche les numéros de ligne sur le coté
-set nu!
 set showmatch
 " tabs
 set tabstop=8
