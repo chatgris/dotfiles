@@ -31,5 +31,5 @@ alias ff="~/src/firefox/firefox -profilemanager -no-remote"
 alias gl="git checkout Gemfile.lock"
 
 # xkb
-alias aze="setxkbmap fr bepo"
-alias bép="setxkbmap fr"
+alias aze="setxkbmap fr bepo && ~/.xsessionrc"
+alias bép="setxkbmap fr && ~/.xsessionrc"
