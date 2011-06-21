@@ -49,9 +49,6 @@ set wc=<TAB>
 " show a list of all matches when tabbing a command
 set wmnu
 
-" Supprime les espaces de fin de ligne
-autocmd BufWritePre * :%s/\s\+$//e
-
 " backup
 set autoread
 set autowrite
