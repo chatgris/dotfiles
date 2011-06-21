@@ -25,6 +25,9 @@ set ruler
 set shm=tToOIA      " Formatage des messages
 set showmode        " affiche le mode actuel
 set showcmd         " affiche les commandes incomplètes
+set wildmenu        " Menu pour la complétion des commandes
+set wildmode=list:longest
+set wildignore=*.o,*.bak,*.pyc,*.swp,*.jpg,*.gif,*.png"
 
 " Silence !
 set noerrorbells
