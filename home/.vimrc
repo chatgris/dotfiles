@@ -25,9 +25,6 @@ set ruler
 set shm=tToOIA      " Formatage des messages
 set showmode        " affiche le mode actuel
 set showcmd         " affiche les commandes incomplètes
-set wildmenu        " Menu pour la complétion des commandes
-set wildmode=list:longest
-set wildignore=*.o,*.bak,*.pyc,*.swp,*.jpg,*.gif,*.png
 
 " Silence !
 set noerrorbells
@@ -43,11 +40,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set shiftround
-" use tab for auto-expansion in menus
-set wc=<TAB>
-
-" show a list of all matches when tabbing a command
-set wmnu
 
 " backup
 set autoread
@@ -95,8 +87,3 @@ noremap <C-tab> :bp!<cr>
 noremap <tab> :bn!<cr>
 noremap : ,
 noremap , :
-
-" supertab
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabCrMapping = 0
