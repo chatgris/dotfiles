@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 gnome-power-manager &
+gnome-settings-daemon &
 nm-applet &
 xscreensaver -nosplash &
 export XMODIFIERS=@im=scim
