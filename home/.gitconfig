@@ -15,6 +15,9 @@
     co  = checkout
     ds  = describe
     df  = diff --word-diff
+    dc  = diff --word-diff --cached
+    dcs = diff --word-diff --cached --stat
+    ds  = diff --stat
     fe  = fetch -p -a
     ft  = fetch -t
     i   = remote -v
@@ -36,3 +39,5 @@
 [user]
     email = jboyer@af83.com
     name = chatgris
+[commit]
+  template = ~/.git-commit-template
