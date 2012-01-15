@@ -36,7 +36,7 @@ else
 	export LS_COLORS
 fi
 export ZLS_COLORS=$LS_COLORS
-
+export TERM=screen-256color
 
 #### Historique
 export HISTORY=1000
