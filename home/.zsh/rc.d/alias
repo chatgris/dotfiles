@@ -36,3 +36,6 @@ alias -g bép="setxkbmap fr && ~/.xsessionrc"
 
 # default config
 alias -g home="xrandr --output LVDS1 --auto --primary --output VGA1 --auto --right-of LVDS1 --rotate left && ~/.xsessionrc && synclient  TapButton1=1"
+
+# Fix tmuw weird colors
+alias tmux="tmux -2"
