@@ -77,3 +77,6 @@ then
   bindkey '^[OF'  end-of-line             # End
 fi
 
+### Go
+export GOROOT=$HOME/src/go
+export PATH=$PATH:$GOROOT/bin
