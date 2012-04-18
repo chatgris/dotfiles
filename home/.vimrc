@@ -95,3 +95,6 @@ noremap , :
 command! -bar -range=% Rocketless :<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/ge
 " Align for ruby 1.9 hashes
 command! -bar -range=% Align : Tab/\w:\zs/l0l1
+
+" Golang
+au BufRead,BufNewFile *.go set filetype=go
