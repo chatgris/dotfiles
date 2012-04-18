@@ -80,3 +80,6 @@ fi
 ### Go
 export GOROOT=$HOME/src/go
 export PATH=$PATH:$GOROOT/bin
+
+### Routino
+export ROUTINO_DATA_DIR=$HOME/routino/data
