@@ -39,3 +39,5 @@ alias -g home="xrandr --output LVDS1 --auto --primary --output VGA1 --auto --rig
 
 # Fix tmuw weird colors
 alias tmux="tmux -2"
+
+alias goo="google-chrome --allow-outdated-plugins"
