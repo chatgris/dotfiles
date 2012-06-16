@@ -41,3 +41,5 @@ alias -g home="xrandr --output LVDS1 --auto --primary --output VGA1 --auto --rig
 alias tmux="tmux -2"
 
 alias goo="google-chrome --allow-outdated-plugins"
+
+alias be="bundle exec"
