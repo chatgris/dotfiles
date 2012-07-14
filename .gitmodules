@@ -64,3 +64,6 @@
 [submodule "home/.vim/bundle/vim-slim"]
 	path = home/.vim/bundle/vim-slim
 	url = git://github.com/bbommarito/vim-slim.git
+[submodule "home/.vim/bundle/fancy-vim"]
+	path = home/.vim/bundle/fancy-vim
+	url = git://github.com/nuclearsandwich/fancy-vim.git
