@@ -1,6 +1,6 @@
 --- 
 :benchmark: false
-gem: --no-ri  --no-rdoc
+gem: --no-rdoc
 :verbose: true
 :backtrace: false
 :update_sources: true
