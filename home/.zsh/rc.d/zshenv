@@ -86,3 +86,5 @@ export ROUTINO_DATA_DIR=$HOME/routino/data
 
 ### Jruby
 export JRUBY_OPTS="--1.9"
+### Rubinius
+export RBXOPT=-X19
