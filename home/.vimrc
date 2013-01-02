@@ -98,3 +98,6 @@ command! -bar -range=% Align : Tab/\w:\zs/l0l1
 
 " Golang
 au BufRead,BufNewFile *.go set filetype=go
+
+" rust
+au BufRead,BufNewFile *.rs setfiletype rust
