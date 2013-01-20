@@ -67,3 +67,6 @@
 [submodule "home/.vim/bundle/fancy-vim"]
 	path = home/.vim/bundle/fancy-vim
 	url = git://github.com/nuclearsandwich/fancy-vim.git
+[submodule "home/.vim/bundle/clam"]
+	path = home/.vim/bundle/clam
+	url = git://github.com/sjl/clam.vim.git
