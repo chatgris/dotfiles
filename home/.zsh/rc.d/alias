@@ -43,3 +43,5 @@ alias tmux="tmux -2"
 alias goo="google-chrome --allow-outdated-plugins"
 
 alias be="bundle exec"
+
+alias gmail="mutt -F ~/.muttrc_gmail"
