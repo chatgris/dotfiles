@@ -1,3 +1,5 @@
-== SCIM dependency ==
+# Dotfiles
 
-aptitude install scim uim-anthy scim-uim ttf-vlgothic
+## Install packages
+
+aptitude install $(cat packages )
