@@ -81,6 +81,10 @@ fi
 export GOROOT=$HOME/src/go
 export PATH=$PATH:$GOROOT/bin
 
+### Elixir
+export ELIXIRROOT=$HOME/src/elixir
+export PATH=$PATH:$ELIXIRROOT/bin
+
 ### Routino
 export ROUTINO_DATA_DIR=$HOME/routino/data
 
