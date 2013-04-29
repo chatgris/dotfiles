@@ -32,6 +32,7 @@
     sh  = show
     sm  = submodule update
     st  = status -sb
+    stm = diff --name-status --diff-filter=U
 [push]
     default = current
 [github]
