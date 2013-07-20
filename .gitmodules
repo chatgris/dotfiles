@@ -75,4 +75,4 @@
 	url = git://github.com/slim-template/vim-slim.git
 [submodule "home/.vim/bundle/vim-elixir"]
 	path = home/.vim/bundle/vim-elixir
-	url = git://github.com/elixir-lang/vim-elixir.git
+	url = https://github.com/elixir-lang/vim-elixir.git
