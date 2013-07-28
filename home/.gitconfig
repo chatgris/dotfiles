@@ -23,7 +23,6 @@
     i   = remote -v
     l   = log
     lf  = log --follow
-    la  = log -p -1 HEAD
     lo  = log -p
     lof = log -p --follow
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
