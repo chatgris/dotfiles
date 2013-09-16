@@ -45,3 +45,5 @@ alias goo="google-chrome --allow-outdated-plugins"
 alias be="bundle exec"
 
 alias gmail="mutt -F ~/.muttrc_gmail"
+
+alias serve="ruby -run -e httpd . -p 5000"
