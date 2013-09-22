@@ -5,6 +5,7 @@ alias lla='ls -la'
 alias lsg='ls | grep $1'
 
 alias ..='cd ..'
+alias e='exit'
 
 alias cp='cp --interactive'
 alias mv='mv --interactive'
