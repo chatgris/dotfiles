@@ -101,3 +101,9 @@ au BufRead,BufNewFile *.go set filetype=go
 
 " rust
 au BufRead,BufNewFile *.rs setfiletype rust
+
+vnoremap ( "zdi(<C-R>z)<ESC>
+vnoremap { "zdi{<C-R>z}<ESC>
+vnoremap [ "zdi[<C-R>z]<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>
+vnoremap " "zdi"<C-R>z"<ESC>
