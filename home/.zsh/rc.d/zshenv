@@ -79,7 +79,7 @@ fi
 
 ### Go
 export GOROOT=$HOME/src/go
-export GOROOT=$HOME/.go
+export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin
 
 ### Elixir
