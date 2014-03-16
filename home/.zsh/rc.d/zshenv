@@ -81,6 +81,7 @@ fi
 export GOROOT=$HOME/src/go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 
 ### Elixir
 export ELIXIRROOT=$HOME/src/elixir
