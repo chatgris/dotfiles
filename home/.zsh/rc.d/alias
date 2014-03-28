@@ -29,7 +29,7 @@ alias -g bép="setxkbmap fr && ~/.xsessionrc"
 alias -g home="xrandr --output LVDS1 --auto --primary --output VGA1 --auto --right-of LVDS1 --rotate left && ~/.xsessionrc && synclient  TapButton1=1"
 
 # Fix tmux weird colors
-alias tmux="tmux -2"
+alias t="tmux -2"
 
 alias be="bundle exec"
 
