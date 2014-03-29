@@ -36,3 +36,6 @@ alias be="bundle exec"
 alias gmail="mutt -F ~/.muttrc_gmail"
 
 alias serve="ruby -run -e httpd . -p 5000"
+
+# Because I do not like Touchpad, Trackball FTW
+alias untouch="synclient TouchpadOff=1"
