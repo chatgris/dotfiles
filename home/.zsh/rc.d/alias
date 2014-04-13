@@ -2,7 +2,6 @@ alias ls='ls --classify --tabsize=0 --literal --color=auto --show-control-chars 
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
-alias lsg='ls | grep $1'
 
 alias ..='cd ..'
 
@@ -10,7 +9,7 @@ alias cp='cp --interactive'
 alias mv='mv --interactive'
 alias rm='rm --interactive'
 
-alias grep="grep --color=auto"
+alias grep="grep --color"
 alias rgrep="rgrep --color=auto"
 
 alias df='df --human-readable'
@@ -21,9 +20,6 @@ alias diff='colordiff'
 
 alias g="git"
 
-# xkb
-alias -g aze="setxkbmap fr bepo && ~/.xsessionrc"
-alias -g bép="setxkbmap fr && ~/.xsessionrc"
 
 # default config
 alias -g home="xrandr --output LVDS1 --auto --primary --output VGA1 --auto --right-of LVDS1 --rotate left && ~/.xsessionrc && synclient  TapButton1=1"
