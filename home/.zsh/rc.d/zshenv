@@ -85,6 +85,8 @@ export PATH=$PATH:$GOPATH/bin
 
 ### Elixir
 export ELIXIRROOT=$HOME/src/elixir
+export ELIXIRDEVROOT=$HOME/dev/oss/elixir
+export PATH=$PATH:$ELIXIRDEVROOT/bin
 export PATH=$PATH:$ELIXIRROOT/bin
 
 ### Routino
