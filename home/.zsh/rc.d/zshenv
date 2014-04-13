@@ -89,9 +89,6 @@ export ELIXIRDEVROOT=$HOME/dev/oss/elixir
 export PATH=$PATH:$ELIXIRDEVROOT/bin
 export PATH=$PATH:$ELIXIRROOT/bin
 
-### Routino
-export ROUTINO_DATA_DIR=$HOME/routino/data
-
 ### Jruby
 export JRUBY_OPTS="--1.9"
 ### Rubinius
