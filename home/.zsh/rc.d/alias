@@ -18,7 +18,7 @@ alias du='du --human-readable'
 # colordiff
 alias diff='colordiff'
 
-alias g="git"
+alias g="gh"
 
 
 # default config
