@@ -39,9 +39,9 @@
 [rerere]
     enabled = 1
 [user]
-    email = jboyer@af83.com
+    email = julien@stormz.com
     name = chatgris
 [commit]
   template = ~/.git-commit-template
 [gh]
-	autoUpdate = always
+  autoUpdate = always
