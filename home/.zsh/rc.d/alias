@@ -1,4 +1,4 @@
-alias ls='ls --classify --tabsize=0 --literal --color=auto --show-control-chars --human-readable'
+alias ls='ls -h'
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
@@ -35,3 +35,5 @@ alias serve="ruby -run -e httpd . -p 5000"
 
 # Because I do not like Touchpad, Trackball FTW
 alias untouch="synclient TouchpadOff=1"
+
+alias o="open -g"
