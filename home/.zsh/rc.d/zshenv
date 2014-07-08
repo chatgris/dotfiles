@@ -89,7 +89,13 @@ export ELIXIRDEVROOT=$HOME/dev/oss/elixir
 export PATH=$PATH:$ELIXIRDEVROOT/bin
 export PATH=$PATH:$ELIXIRROOT/bin
 
+## Node
+export NVM_DIR=~/.nvm
+
 ### Jruby
 export JRUBY_OPTS="--1.9"
 ### Rubinius
 export RBXOPT=-X19
+
+export LC_ALL='en_US.UTF-8'
+export LANG='en_US.UTF-8'
