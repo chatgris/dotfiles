@@ -26,6 +26,7 @@
     lo  = log -p
     lof = log -p --follow
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    mf  = merge --no-ff -
     pl  = pull --rebase
     ph  = push
     phf = push -f
