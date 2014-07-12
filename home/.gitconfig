@@ -28,6 +28,7 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     pl  = pull --rebase
     ph  = push
+    phf = push -f
     sh  = show
     sm  = submodule update
     st  = status -sb
