@@ -15,6 +15,7 @@
     co  = checkout
     ds  = describe
     df  = diff --word-diff
+    dfs = diff --word-diff --stat
     dc  = diff --word-diff --cached
     dcs = diff --word-diff --cached --stat
     ds  = diff --stat
