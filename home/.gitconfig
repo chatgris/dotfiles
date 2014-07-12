@@ -30,6 +30,7 @@
     pl  = pull --rebase
     ph  = push
     phf = push -f
+    rd  = rebase develop
     sh  = show
     sm  = submodule update
     st  = status -sb
