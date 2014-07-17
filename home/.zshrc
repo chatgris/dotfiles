@@ -11,3 +11,4 @@ PROMPT='%F{white}%n@%m %c${vcs_info_msg_0_}%F{white} % %{$reset_color%}'
 
 export NVM_DIR="/Users/chatgris/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm use 0.10.2
