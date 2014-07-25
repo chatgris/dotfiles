@@ -88,8 +88,6 @@ set wmh=0
 set splitright
 noremap <C-tab> :bp!<cr>
 noremap <tab> :bn!<cr>
-noremap : ,
-noremap , :
 
 " Ruby Hash conversion
 command! -bar -range=% Rocketless :<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/ge
