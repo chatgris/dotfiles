@@ -13,9 +13,6 @@
 [submodule "home/.vim/bundle/indent-guides"]
 	path = home/.vim/bundle/indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
-[submodule "home/.vim/bundle/jquery"]
-	path = home/.vim/bundle/jquery
-	url = git://github.com/vim-scripts/jQuery.git
 [submodule "home/.vim/bundle/markdown"]
 	path = home/.vim/bundle/markdown
 	url = git://github.com/vim-scripts/Markdown.git
@@ -34,15 +31,9 @@
 [submodule "home/.vim/bundle/supertab"]
 	path = home/.vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "home/.vim/bundle/tabular"]
-	path = home/.vim/bundle/tabular
-	url = git://github.com/godlygeek/tabular.git
 [submodule "home/.vim/bundle/tag-list"]
 	path = home/.vim/bundle/tag-list
 	url = git://github.com/vim-scripts/taglist.vim.git
-[submodule "home/.vim/bundle/textile"]
-	path = home/.vim/bundle/textile
-	url = git://github.com/timcharper/textile.vim.git
 [submodule "home/.vim/bundle/textobj-rubyblock"]
 	path = home/.vim/bundle/textobj-rubyblock
 	url = git://github.com/vim-scripts/textobj-rubyblock.git
@@ -61,15 +52,6 @@
 [submodule "home/.vim/bundle/vim-slim"]
 	path = home/.vim/bundle/vim-slim
 	url = git://github.com/bbommarito/vim-slim.git
-[submodule "home/.vim/bundle/fancy-vim"]
-	path = home/.vim/bundle/fancy-vim
-	url = git://github.com/nuclearsandwich/fancy-vim.git
-[submodule "home/.vim/bundle/clam"]
-	path = home/.vim/bundle/clam
-	url = git://github.com/sjl/clam.vim.git
-[submodule "home/.vim/bundle/slim"]
-	path = home/.vim/bundle/slim
-	url = git://github.com/slim-template/vim-slim.git
 [submodule "home/.vim/bundle/vim-elixir"]
 	path = home/.vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
