@@ -105,3 +105,6 @@ vnoremap { "zdi{<C-R>z}<ESC>
 vnoremap [ "zdi[<C-R>z]<ESC>
 vnoremap ' "zdi'<C-R>z'<ESC>
 vnoremap " "zdi"<C-R>z"<ESC>
+
+" emoji :ok_hand:
+set completefunc=emoji#complete
