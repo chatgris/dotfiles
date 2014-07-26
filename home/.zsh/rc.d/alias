@@ -26,6 +26,7 @@ alias -g home="xrandr --output LVDS1 --auto --primary --output VGA1 --auto --rig
 
 # Fix tmux weird colors
 alias t="tmux -2"
+alias ta="tmux attach"
 
 alias be="bundle exec"
 
