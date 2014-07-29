@@ -12,6 +12,7 @@
     bn  = branch --no-merged
     ch  = cherry-pick
     ci  = commit
+    cia = commit --amend
     co  = checkout
     ds  = describe
     df  = diff --word-diff
