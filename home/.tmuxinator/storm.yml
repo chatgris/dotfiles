@@ -1,0 +1,8 @@
+# ~/.tmuxinator/storm.yml
+
+name: storm
+root: ~/dev/stormz/storm
+windows:
+  - git: git status
+  - vim: vim .
+  - vm: cd .. && vagrant reload && vagrant ssh
