@@ -1,0 +1,7 @@
+name: funnel
+root: ~/dev/funnel/funnel
+pre: desi start
+windows:
+  - git: git status
+  - vim: vim .
+  - tests: mix test
