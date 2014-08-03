@@ -5,6 +5,7 @@
     status = auto
 [alias]
     a   = add
+    ap  = add -p
     b   = branch
     ba  = branch -a
     bc  = branch --contains
