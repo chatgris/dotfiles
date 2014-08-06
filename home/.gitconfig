@@ -45,7 +45,7 @@
 [rerere]
     enabled = 1
 [user]
-    email = julien@stormz.me
+    email = chatgri@gmail.com
     name = chatgris
 [commit]
   template = ~/.git-commit-template
