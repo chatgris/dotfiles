@@ -14,15 +14,11 @@ path=(
 	.
 )
 
-#### Viewer/Editeur par defaut (pour Crontab, CVS,...)
 export VISUAL=vim
 export EDITOR=vim
 
-#### Permissions rw-r--r-- pour les fichiers crées
-#### et rwxr-xr-x pour les répertoires crées
 umask 022
 
-#### Les couleurs
 if [[ -x `which dircolors` ]]; then
 	if [[ -f ~/.dir_colors ]]; then
 		eval $(dircolors -b ~/.dir_colors)
@@ -38,44 +34,17 @@ fi
 export ZLS_COLORS=$LS_COLORS
 export TERM=screen-256color
 
-#### Historique
 export HISTORY=1000
 export HISTSIZE=1000
 export SAVEHIST=1000
 
 export HISTFILE=$HOME/.zhistory
 
-## directory stack
 DIRSTACKSIZE=10
 
-#### Watch
 LOGCHECK=60
 WATCHFMT="%n has %a %l from %M at %t"
 WATCH=notme
-
-#### Console linux, dans un screen ou un rxvt
-if [ "$TERM" = "linux" -o "$TERM" = "screen" -o "$TERM" = "rxvt" ]
-then
-  # Correspondance touches-fonction spécifique
-  bindkey '[1~' beginning-of-line       # Home
-  bindkey '[4~' end-of-line             # End
-fi
-
-#### xterm
-if [ "$TERM" = "xterm" ]
-then
-  # Correspondance touches-fonction spécifique
-  bindkey '[H'  beginning-of-line       # Home
-  bindkey '[F'  end-of-line             # End
-fi
-
-#### gnome-terminal
-if [ "$COLORTERM" = "gnome-terminal" ]
-then
-  # Correspondance touches-fonction spécifique
-  bindkey '^[OH'  beginning-of-line       # Home
-  bindkey '^[OF'  end-of-line             # End
-fi
 
 ### Go
 export GOROOT=$HOME/src/go
@@ -91,11 +60,6 @@ export PATH=$PATH:$ELIXIRROOT/bin
 
 ## Node
 export NVM_DIR=~/.nvm
-
-### Jruby
-export JRUBY_OPTS="--1.9"
-### Rubinius
-export RBXOPT=-X19
 
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
