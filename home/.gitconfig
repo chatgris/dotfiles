@@ -8,9 +8,6 @@
     ap  = add -p
     b   = branch
     ba  = branch -a
-    bc  = branch --contains
-    bm  = branch --merged
-    bn  = branch --no-merged
     ch  = cherry-pick
     ci  = commit
     cia = commit --amend
@@ -23,7 +20,6 @@
     ds  = diff --stat
     fe  = fetch -p -a
     ft  = fetch -t
-    i   = remote -v
     l   = log
     lf  = log --follow
     lo  = log -p
@@ -33,11 +29,9 @@
     pl  = pull --rebase
     ph  = push
     phf = push -f
-    rd  = rebase develop
     sh  = show
     sm  = submodule update
     st  = status -sb
-    stm = diff --name-status --diff-filter=U
 [push]
     default = current
 [github]
