@@ -28,7 +28,7 @@
     mf  = merge --no-ff -
     pl  = pull --rebase
     ph  = push
-    phf = push -f
+    phf = push --force-with-lease
     sh  = show
     sm  = submodule update
     st  = status -sb
