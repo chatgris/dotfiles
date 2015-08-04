@@ -20,7 +20,7 @@ alias du='du --human-readable'
 # colordiff
 alias diff='colordiff'
 
-alias g="gh"
+alias g="git"
 
 # Fix tmux weird colors
 alias t="tmux -2"
