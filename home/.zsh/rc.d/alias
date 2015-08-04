@@ -33,3 +33,4 @@ alias gmail="mutt -F ~/.muttrc_gmail"
 alias serve="ruby -run -e httpd . -p 5000"
 
 alias o="open -g"
+alias dc="docker-compose"
