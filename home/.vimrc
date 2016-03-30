@@ -24,6 +24,15 @@ set noerrorbells
 set visualbell t_vb=
 autocmd GUIEnter * set vb t_vb=
 
+set autoindent
+set smartindent
+set smarttab
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
+
 " backup
 set autoread
 set autowrite
@@ -40,3 +49,5 @@ filetype plugin on
 
 " load indent files for specific filetypes
 filetype indent on
+
+noremap <tab> :bn!<cr>
