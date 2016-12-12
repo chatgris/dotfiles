@@ -34,3 +34,5 @@ alias serve="ruby -run -e httpd . -p 5000"
 
 alias o="open -g"
 alias dc="docker-compose"
+
+alias nvim='docker run -it --rm -e "TERM=xterm-256color" -v `pwd`:$HOME/nvim -v $HOME/.backup:$HOME/.backup -v $HOME/.swap:$HOME/.swap -v $HOME/dev/chatgris/nvim-docker/nvim:$HOME/.config/nvim chatgris/neovim' "$@"
