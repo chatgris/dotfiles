@@ -45,3 +45,5 @@
   template = ~/.git-commit-template
 [gh]
   autoUpdate = always
+[status]
+  showUntrackedFiles = all
