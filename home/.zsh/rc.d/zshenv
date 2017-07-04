@@ -9,9 +9,7 @@ path=(
 	/usr/local/bin
 	/usr/local/sbin
 	/usr/games
-	$HOME/bin
-	$HOME/opt/bin
-	.
+  ./bin
 )
 
 export VISUAL=vim
@@ -46,22 +44,5 @@ LOGCHECK=60
 WATCHFMT="%n has %a %l from %M at %t"
 WATCH=notme
 
-### Go
-export GOROOT=$HOME/src/go
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOROOT/bin
-export PATH=$PATH:$GOPATH/bin
-
-### Elixir
-export ELIXIRROOT=$HOME/src/elixir
-export ELIXIRDEVROOT=$HOME/dev/oss/elixir
-export PATH=$PATH:$ELIXIRDEVROOT/bin
-export PATH=$PATH:$ELIXIRROOT/bin
-
-## Node
-export NVM_DIR=~/.nvm
-
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
-
-export COMPOSE_FILE=docker-compose-dev.yml
